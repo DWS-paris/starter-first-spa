@@ -18,5 +18,9 @@
     "url": "https://github.com/DWS-paris/starter-first-spa/issues"
   },
   "homepage": "https://github.com/DWS-paris/starter-first-spa#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "live-server": "^1.2.2"
+  }
 }
