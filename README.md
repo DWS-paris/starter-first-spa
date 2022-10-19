@@ -1,4 +1,46 @@
-# Start first app
+# Projet : Start first app
+
+*Support de cours pour la création d'une application web*
+
+![](https://i.imgur.com/dc0PCL4.png)
+
+> &copy; [Julien Noyer](https://www.linkedin.com/in/julien-n-21219b28/) - All rights reserved for educational purposes only
+
+---
+
+## Présentation
+
+Le répertoire suivant vous donne accès à un code de départ pour réaliser une application web de type "**[Single Page Application](https://hackmd.io/@teach-supports/webapp-support)**" en utilisant les téchologie HTML, CSS et Javascript ES6. Ce répertoire débuté lors de sessions de cours présente différentes fonctionnalités ainsi que des commentaires préfixé par le mot cléf "**TODO**" pour vous indiquer les fcontionnalités à développer.
+
+<br>
+
+## Configuration du projet
+
+Afin de vous simplifier l'utilisation de "**[LiveServer](https://www.npmjs.com/package/live-server)**" et "**[JSONserver](https://www.npmjs.com/package/json-server)**" les deux modules ont été instalé dans ce répertoire, pour les instllé sur votre machine locale vous devez taper la commande suivante : 
+
+```
+npm install
+```
+
+> Si vous les avez au préalable installé globalement cette commande est inutile
+
+
+<br>
+
+## Lancement du projet
+
+Une fois les modules installés vous pouvez lancer les scripts du fichier **[package.json](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)** qui vous permettent de lancer votre server d'API et votre application : 
+
+```
+# Lancer le server d'API
+npm run data
+
+# Lancer l'application
+npm run start
+```
+
+> Ces commandes doivent être tapées dans deux invites différents
+
 
 Afin de vous permettre de manipuler et de mieux appréhender les techniques que nous avons abordé, vous devez réaliser les étapes suivantes : 
 
