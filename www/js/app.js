@@ -3,7 +3,7 @@
     Define all needed variables
 */
     // Declare variable for "initNavigation" function
-    let burgerBuactiveViewtton = null;
+    let burgerBuactiveViewButton = null;
     let burgerButton = null;
     let burgerNavigation = null;
     let navigationLinks = null;
@@ -39,7 +39,6 @@
     */
         const initNavigation = () => {
             // Bind HTML tag
-            burgerBuactiveViewtton = '#home';
             burgerButton = document.querySelector( '.navbar-burger' );
             burgerNavigation = document.querySelector( '.navbar-menu' );
             navigationLinks = document.querySelectorAll( '.navbar-item' );
@@ -80,11 +79,15 @@
             appSections = document.querySelectorAll( '.section' );
 
             // Toggle active section
-            document.querySelector( `.section.active` ).classList.remove('active')
+            document.querySelector( `.section.active` ).classList.remove('active');
             document.querySelector( view ).classList.add('active');
 
             // Toggle navigation link
-            document.querySelector( `.navbar-item.active` ).classList.remove('active')
+            if(document.querySelector( `.navbar-item.active` )){
+                document.querySelector( `.navbar-item.active` ).classList.remove('active');
+            }
+
+            // Update navigation link
             document.querySelector( `[href="${ view }"]` ).classList.add('active');
         }
     //
@@ -167,16 +170,10 @@
                         'http://localhost:3000/comments?isPartOf=' + id, //=> URL to fetch
                         'GET', //=> HTTP method
                         null, //=> Data is needed for "POST" or "PUT"
-                    )
+                    );
 
-                    console.log('[DEBUG] Single post', {singleArticle, commentsArticle})
-
-                    // TODO: Display article
-                    // TODO: Display comment list
-                    // TODO: Display comment form
-
-                    // Call function addPostComment
-                    addPostComment( id );
+                    // Call function displaySinglePost
+                    displaySinglePost( id, singleArticle, commentsArticle );
                 } 
                 catch ( tryCatchError ) {
                     console.log('[DEBUG] try/catch', tryCatchError)
@@ -186,13 +183,22 @@
     //
 
     /* 
-        Function addPostComment
+        Function displaySinglePost
+        - display article title and content
         - define variable to bind form submit
         - bind form submit event
         - check form value
         - send POST request to create new comment
     */
-        const addPostComment = ( postId ) => {
+        const displaySinglePost = ( postId, article, comments ) => {
+            console.log({
+                msg: `TODO: Display article title, content and comments`,
+                article, comments
+            })
+
+            // Update active section
+            updateActiveView( '#single-post' );
+
             // Define variable to bind form submit
             addCommentFormTag = document.querySelector('.add-comment-form')
 
@@ -213,7 +219,10 @@
                     }, //=> Data is needed for "POST" or "PUT"
                 )
                 .then( resolvedPromise => {
-                    console.log('[DEBUG] New comment', resolvedPromise)
+                    console.log({
+                        msg: `TODO: Display new comment`,
+                        comment: resolvedPromise
+                    })
                 })
                 .catch( rejectedPromise => {
                     console.error('[DEBUG] Fetch error', rejectedPromise)

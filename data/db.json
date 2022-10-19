@@ -1,4 +1,11 @@
 {
+  "users": [
+    {
+      "email": "admin@admin.com",
+      "password": "notarealpasswordbutitwork",
+      "name": "Mr. Robot"
+    }
+  ],
   "posts": [
     {
       "title": "azertyuio",
@@ -12,6 +19,11 @@
       "isPartOf": 1,
       "content": "trop bien le post",
       "id": 1
+    },
+    {
+      "isPartOf": 1,
+      "content": "qsfgsfgsdfg",
+      "id": 2
     }
   ]
 }

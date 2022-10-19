@@ -50,17 +50,18 @@ Afin de vous permettre de manipuler et de mieux appréhender les techniques que 
 - [x] En tant que USER je peux voir le liste des articles
 - [ ] En tant que USER je peux créer un article
 - [ ] En tant que USER quand je créé un article il s'ajoute dans la liste des articles
-- [ ] En tant que USER je peux cliquer sur un article pour l'afficher
+- [x] En tant que USER je peux cliquer sur un article pour l'afficher
 - [ ] En tant que USER quand je lis un article je peux lire les commentaires de l'article
-- [ ] En tant que USER quand je lis un article je peux le commenter
+- [x] En tant que USER quand je lis un article je peux le commenter
 - [ ] En tant que USER quand je commente un article il s'ajoute automatiquement dans la liste des commentaires
-- [ ] En tant que USER j'ai accès à un menu "burger"
-- [ ] En tant que USER j'ai accès à deux liens dans la navigation : "Home" et "Add post"
-- [ ] En tant que USER quand je clic sur le lien "Home" j'affiche uniquement la liste des articles
-- [ ] En tant que USER quand je clic sur le lien "Add post" j'affiche uniquement le formulaire
+- [x] En tant que USER j'ai accès à un menu "burger"
+- [x] En tant que USER j'ai accès à deux liens dans la navigation : "Home" et "Add post"
+- [x] En tant que USER quand je clic sur le lien "Home" j'affiche uniquement la liste des articles
+- [x] En tant que USER quand je clic sur le lien "Add post" j'affiche uniquement le formulaire
 
+Certaines de ces fonctionnalités ont déjà été vues en cour mais le code présenté dans ce répertoire, vous devez faire votre maximum pour les finaliser afin de démontrer votre compréhension des concepts manipulés.
 
-Et pour les plus téméraires :
+il vous est proposer en plus de développer les fonctionnalités suivantes. Vous n'êtes en ausun cas obligé de les réaliser mais elles peuvent vous permettre d'aller plus loin dans la gestion d'une "**[Single Page Application](https://hackmd.io/@teach-supports/webapp-support)**" :
 
 - [ ] En tant que USER je peux créer un compte personnel contenant : nom, email et password
 - [ ] En tant que USER si je ne suis pas connecté j'ai accès à un formulaire de connexion
@@ -68,8 +69,6 @@ Et pour les plus téméraires :
 - [ ] En tant que USER quand je suis connecté je n'affiche que les articles dont je suis l'auteur
 - [ ] En tant que USER connecté si je recharge la page je suis toujours connecté
 - [ ] En tant que USER connecté je peux me déconnecter avec un lien "Logout" dans la navigation
-
-
 ---
 
 # Ressources
