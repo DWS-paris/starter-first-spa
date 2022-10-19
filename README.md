@@ -39,7 +39,7 @@ npm run data
 npm run start
 ```
 
-> Ces commandes doivent être tapées dans deux invites différents
+> Ces commandes doivent être tapées dans deux invites différents@
 
 ---
 

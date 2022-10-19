@@ -2,6 +2,15 @@
     Declaration
     Define all needed variables
 */
+    // Declare variable for "initNavigation" function
+    let burgerBuactiveViewtton = null;
+    let burgerButton = null;
+    let burgerNavigation = null;
+    let navigationLinks = null;
+
+    // Declare variable for "updateActiveView" function
+    let appSections = null;
+
     // Declare variables for "loadPostList" function
     let postListTag = null;
     let postListCollection = null;
@@ -19,6 +28,67 @@
     Functions
     Define all needed fonctions
 */
+    /* 
+        Function: loadPostList
+        - define variable to display navigation
+        - bind click event on burger menu
+            - toggle "is-active" on navigation links
+        - bind click event on navigation links
+            - set active view
+            - close burger menu
+    */
+        const initNavigation = () => {
+            // Bind HTML tag
+            burgerBuactiveViewtton = '#home';
+            burgerButton = document.querySelector( '.navbar-burger' );
+            burgerNavigation = document.querySelector( '.navbar-menu' );
+            navigationLinks = document.querySelectorAll( '.navbar-item' );
+
+            // Bind click event on burger button
+            burgerButton.addEventListener( 'click', () => {
+                // Toggle classe "is-active"
+                burgerNavigation.classList.toggle('is-active');
+                burgerButton.classList.toggle('is-active');
+            });
+
+            // Get each navigation link
+            for( let link of navigationLinks ){
+                // Bind click event on navigation link
+                link.addEventListener( 'click', (event) => {
+                    // Prevent event default
+                    event.preventDefault();
+
+                    // Update active view
+                    updateActiveView( link.getAttribute('href') );
+
+                    // Close burger menu
+                    burgerNavigation.classList.remove('is-active');
+                    burgerButton.classList.remove('is-active');
+                });
+            }
+        };
+    //
+
+     /* 
+        Function: updateActiveView
+        - define variable to display active section
+        - get all section
+        - add or remove "active" classe
+    */
+        const updateActiveView = ( view ) => {
+            // Bind HTML tag
+            appSections = document.querySelectorAll( '.section' );
+
+            // Toggle active section
+            document.querySelector( `.section.active` ).classList.remove('active')
+            document.querySelector( view ).classList.add('active');
+
+            // Toggle navigation link
+            document.querySelector( `.navbar-item.active` ).classList.remove('active')
+            document.querySelector( `[href="${ view }"]` ).classList.add('active');
+        }
+    //
+
     /* 
         Function: loadPostList
         - define variable to display post list
@@ -151,6 +221,19 @@
             })
         };
     //
+
+    /* 
+        Function: initApp
+        A better way to start application is to call one function
+    */
+        const initApp = () => {
+            // Init navigation
+            initNavigation();
+
+            // Display post list
+            loadPostList();
+        };
+    //
 //
 
 
@@ -159,7 +242,7 @@
     Start user interface
 */
     document.addEventListener('DOMContentLoaded', () => {
-        // Display post list
-        loadPostList();
+        // Init application
+        initApp();
     })
 //
