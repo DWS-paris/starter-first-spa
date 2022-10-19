@@ -18,7 +18,7 @@ Le répertoire suivant vous donne accès à un code de départ pour réaliser un
 
 Afin de vous simplifier l'utilisation de "**[LiveServer](https://www.npmjs.com/package/live-server)**" et "**[JSONserver](https://www.npmjs.com/package/json-server)**" les deux modules ont été instalé dans ce répertoire, pour les instllé sur votre machine locale vous devez taper la commande suivante : 
 
-```
+```bach
 npm install
 ```
 
@@ -31,7 +31,7 @@ npm install
 
 Une fois les modules installés vous pouvez lancer les scripts du fichier **[package.json](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)** qui vous permettent de lancer votre server d'API et votre application : 
 
-```
+```bash
 # Lancer le server d'API
 npm run data
 
