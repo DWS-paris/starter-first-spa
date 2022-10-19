@@ -41,10 +41,13 @@ npm run start
 
 > Ces commandes doivent être tapées dans deux invites différents
 
+---
+
+## Définition des fonctionnalité
 
 Afin de vous permettre de manipuler et de mieux appréhender les techniques que nous avons abordé, vous devez réaliser les étapes suivantes : 
 
-- En tant que USER je peux voir le liste des articles
+- [x] En tant que USER je peux voir le liste des articles
 - En tant que USER je peux créer un article
 - En tant que USER quand je créé un article il s'ajoute dans la liste des articles
 - En tant que USER je peux cliquer sur un article pour l'afficher
@@ -65,3 +68,18 @@ Et pour les plus téméraires :
 - En tant que USER quand je suis connecté je n'affiche que les articles dont je suis l'auteur
 - En tant que USER connecté si je recharge la page je suis toujours connecté
 - En tant que USER connecté je peux me déconnecter avec un lien "Logout" dans la navigation
+
+
+---
+
+# Ressources
+
+![](https://i.imgur.com/eAySYs0.png)
+
+> Liste de liens utiles pour la mise en place de la séquence
+
+- [**Application native, hybride, ça sera tout ?**](https://hackmd.io/@teach-supports/webapp-support)
+- [**Application native, hybride, ça sera tout ?**](https://hackmd.io/@teach-supports/webapp-support)
+- [**LiveServer**](https://www.npmjs.com/package/live-server)
+- [**JSONserver**](https://www.npmjs.com/package/json-server)
+- [**Package.json**](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)
